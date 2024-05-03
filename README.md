@@ -3,22 +3,19 @@ This is a GitHub repository with instructions on how to authenticate your identi
 
 eval "$(ssh-agent -s)"
 
-ssh-add <path-to-file>
+# ssh-add <path-to-file>
 
 ssh-add /Users/marencordts/ssh_key_hugging_face
 
-chmod 600 ~/.<file_name_ssh_key>
+# chmod 600 ~/.<file_name_ssh_key>
 
 chmod 600 /Users/marencordts/ssh_key_hugging_face
 
-Test ssh-connection
+# Test ssh-connection: ssh -T git@hf.co
 
-ssh -T git@hf.co
+git clone git@hf.co:spaces/IWIHSG/sess
 
-git clone git@hf.co:spaces/IWIHSG/fact_check
+# Activate venv environment
 
-
-Activate venv environment
-
-source /Users/marencordts/fact_check/.venv/bin/activate
+source /Users/marencordts/sess/.venv/bin/activate
 
